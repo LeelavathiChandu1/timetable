@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1{
+            border-collapse: collapse;
+        }
+        .t2{
+            border-collapse: collapse;
+        }
+        h2,h3{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <tr>
+            <td ><img src="data:image/png;base64,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"" width="250px" alt="vishnu logo is displayed"></td>
+            <td> <h2>Shri Vishnu Engineering College for Women::BHIMAVARAM</h2>
+                <h2 >(Autonomous)</h2>
+            <h2 >DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
+            <h2 ><u>TIME TABLE:2022-2023</u></h2>
+           <h3>Class Incharge:Mrs.K.Spandana</h3></td>
+           </tr>
+
+    </table>
+    <table width="80%">
+        <tr><th align="left">YEAR:2nd Btech 1st sem</th>
+        <th>W.E.F:22.08.2022</th></tr>
+        <tr><th align="left">CLASS:IT-A</th>
+        <th>ROOM NO:D-203</th></tr>
+    </table>
+    <table border="3" class="t2"><tr><th>PERIOD</th>
+    <th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th rowspan="2">11.40 a.m-1 p.m</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+<th>8</th></tr>
+<tr><th>DAY</th>
+<th>8.00-8.50 a.m</th>
+<th>8.50-9.40 a.m</th>
+<th>10.00-10.50 a.m</th>
+<th>10.50-11.40 a.m</th>
+<th>1.00-1.50 p.m</th>
+<th>1.50-2.40 p.m</th>
+<th>12.50-3.40 p.m</th>
+<th>3.40-4.30 p.m</th>
+</tr>
+<tr><th>MON</th>
+<td align="center">P&S</td>
+<td align="center">PYTHON</td>
+<td align="center">CO</td>
+<td align="center">SE</td>
+<th rowspan="6" ><h3 >L<br>U<br>N<br>C<br>H<br><p> </p></p>B<br>R<br>E<br>A<br>K</h3><br></th>
+<td align="center">DBMS</td>
+<th align="center" colspan="3">PYTHON LAB/FWD LAB</th>
+<tr><th>TUE</th>
+<td align="center">DBMS</td>
+<td align="center" colspan="2">CODING</td>
+<td align="center">CO</td>
+<td align="center">P&S</td>
+<th align="center" colspan="3">FWD LAB/DBMS LAB</th></tr>
+<tr>
+    <th>WED</th>
+    <td align="center">PYTHON</td>
+    <td align="center" colspan="2">FWD LAB</td>
+    <td align="center">CO</td>
+    <td align="center">SE</td>
+<th align="center" colspan="3">ARTS</th>
+</tr>
+<tr>
+    <th>THU</th>
+    <td align="center">CO</td>
+    <th align="center">LIB</th>
+    <td align="center">SE</td>
+    <td align="center">PYTHON</td>
+    <td align="center">ES</td>
+    <td align="center">P&S</td>
+    <td align="center">FWD LAB</td>
+    <td align="center">DBMS</td>
+</tr>
+<tr>
+    <th>FRI</th>
+    <td align="center">SE</td>
+    <td align="center">P&S</td>
+    <td align="center">PYTHON</td>
+    <td align="center">DBMS</td>
+    <td align="center">FWD LAB</td>
+    <td align="center" colspan="3">DBMS LAB/PYTHON LAB</td>
+</tr>
+<tr>
+    <th>SAT</th>
+    <td align="center">FWD LAB</td>
+    <td align="center">ES</td>
+    <td align="center">CO</td>
+    <th align="center">COUN</th>
+    <td align="center">DBMS</td>
+    <td align="center">SE</td>
+    <td align="center">PYTHON</td>
+    <td align="center">P&S</td>
+</tr>
+</table>
+<table width="70%">
+    <tr><th ><u>Subject</u></th>
+    <th ><u>Faculty</u></th></tr>
+</table> 
+<table width="75%" border="3" class="t1">
+ <tr><th>P&S</th>
+<td>Probability&Statistics</td>
+<td>Mrs.Ch.Ganga Bhavani</td></tr>
+<tr><th>CO</th>
+    <td>Computer Organisation</td>
+    <td>Mr.K.P.Swaroop</td></tr>
+    <tr><th>DBMS</th>
+        <td>Database Management Systems</td>
+        <td>Mrs.K.Spandana</td></tr>
+        <tr><th>SE</th>
+            <td>Software Engineering</td>
+            <td>Mr.S.Sreenivasuu</td></tr>
+            <tr><th>PYTHON</th>
+                <td>Python Programming</td>
+                <td>Prof.P.Venkata Rama Raju</td></tr>
+                <tr><th>DBMS LAB</th>
+                    <td>DBMS lab</td>
+                    <td>Mrs.K.Spandana</td></tr>
+                    <tr><th>PYTHON LAB</th>
+                        <td>Python programming lab</td>
+                        <td>Prof.P.Venkata Rama Raju</td></tr>
+                        <tr><th>FWD LAB</th>
+                            <td>Front-End Web Development Lab</td>
+                            <td>Mr.D.V.Naga Raju</td></tr>
+                            <tr><th>ES</th>
+                                <td>Environmental Science</td>
+                                <td>Mr.D.B.N.S Varma</td></tr>
+                                <tr><th>ARTS</th>
+                                    <td>arts</td>
+                                    <td></td></tr>
+                                
+</table>
+<h3><u>Non-Academics</u></h3>
+<table width="40%"><tr>
+<th align="left">LIB</th>
+<td>Library</td></tr>
+<tr>
+<th align="left">Coun</th>
+<td>Counselling</td>
+</tr>
+<th align="left">Coding</th>
+<td>Coding Practice</td></table>
+
+</body>
+</html>
